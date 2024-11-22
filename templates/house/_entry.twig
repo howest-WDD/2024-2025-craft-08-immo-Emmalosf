@@ -30,11 +30,11 @@
 								<img src="{{ image.url }}" class="d-block w-100" alt="">
 							</div>
 							{# <div class="carousel-item">
-							                            <img src="{{url('img/aptOne/aptOne-two.jpg')}}" class="d-block w-100" alt="">
-							                        </div>
-							                        <div class="carousel-item">
-							                            <img src="{{url('img/aptOne/aptOne-three.jpg')}}" class="d-block w-100" alt="">
-							                        </div> #}
+														                            <img src="{{url('img/aptOne/aptOne-two.jpg')}}" class="d-block w-100" alt="">
+														                        </div>
+														                        <div class="carousel-item">
+														                            <img src="{{url('img/aptOne/aptOne-three.jpg')}}" class="d-block w-100" alt="">
+														                        </div> #}
 						{% endfor %}
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -64,18 +64,18 @@
 					<!-- Zorg dat de kleur van de tag veranderd d.m.v .c-detail__tag--rent toe te passen wanneer iets “for rent” staat. -->
 					<p>
 						<a class="c-detail__tag
-							                    {% switch entry.state %}
-																																																	{% case 'rent' %}
-																																																		c-detail__tag--rent
+					{% switch entry.state %}
+																																																								{% case 'rent' %}
+																																																									c-detail__tag--rent
 							
-																																																		{% case 'sale' %}
-																																																		c-detail__tag--sale
+																																																									{% case 'sale' %}
+																																																									c-detail__tag--sale
 							
-																																																		{% endswitch %}
+																																																									{% endswitch %}
 							
 							
 							
-							                    " href="#">For
+														                    " href="#">For
 							{{entry.state}}</a>
 					</p>
 				</div>
@@ -135,15 +135,15 @@
 
 				<ul>
 					{% for item in entry.strenghts %}
-						
-							<li class="c-detail__list-item">
-								{{ item.listItem }}</li>
-							{# <li class="c-detail__list-item"> 2 terraces</li>
-							                    <li class="c-detail__list-item"> Wide bedroom</li>
-							                    <li class="c-detail__list-item"> Green neighbourhood</li>
-							                    <li class="c-detail__list-item"> Water view</li>
-							                    <li class="c-detail__list-item"> Ready to move in</li> #}
-					
+
+						<li class="c-detail__list-item">
+							{{ item.listItem }}</li>
+						{# <li class="c-detail__list-item"> 2 terraces</li>
+													                    <li class="c-detail__list-item"> Wide bedroom</li>
+													                    <li class="c-detail__list-item"> Green neighbourhood</li>
+													                    <li class="c-detail__list-item"> Water view</li>
+													                    <li class="c-detail__list-item"> Ready to move in</li> #}
+
 					{% endfor %}
 				</ul>
 
